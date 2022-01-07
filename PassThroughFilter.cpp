@@ -22,4 +22,6 @@ void PassThroughFilter::filter(PointCloud& pc) {
         }
         i++;
     }
+    pc.setpn(points.size());
+    pc.setPoints(points);
 };

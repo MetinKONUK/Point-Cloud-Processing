@@ -3,8 +3,7 @@
 
 using namespace std;
 
-Transform::Transform() {
-};
+Transform::Transform() {};
 
 void Transform::setRotation(double ang [3]) {
     double a = ang[0];

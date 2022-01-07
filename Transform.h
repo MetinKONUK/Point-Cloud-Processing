@@ -10,8 +10,8 @@ private:
     double rotationMatrix[3][3]; //rotation matrix
 public:
     Transform();
-    void setRotation(double[]);
-    void setTranslation(double[]);
+    void setRotation(double[3]);
+    void setTranslation(double[3]);
     Point doTransform(Point);
     PointCloud doTransform(PointCloud);
 };

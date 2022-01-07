@@ -10,5 +10,5 @@ private:
     string file_name;
 public:
     PointCloudRecorder();
-    bool save(const PointCloud&);
+    bool const save(PointCloud&);
 };

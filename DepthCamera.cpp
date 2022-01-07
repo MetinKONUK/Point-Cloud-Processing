@@ -1,10 +1,9 @@
 #include "DepthCamera.h"
-DepthCamera::DepthCamera() {
-    cout << "Enter the file name: ";
-    getline(cin, this->file_name);
-};
+DepthCamera::DepthCamera() {};
 
 PointCloud DepthCamera::capture() {
+    cout << "Enter the file name: ";
+    getline(cin, this->file_name);
     ifstream file(this->file_name);
     if(!file.is_open())
         return 0;
